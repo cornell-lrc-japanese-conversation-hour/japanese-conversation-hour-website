@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>和会話教室 @ Cornell</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='assets/images/logo.svg') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="position: relative;">
+
+    <div id="content">
+        <div class="content-block" style="height: 100vh; background-color: var(--yellow);">
+            <div class="content-block-content" style="position: relative;">
+                <h3 style="position: absolute; top: 20px; left: 0; width: 100%; color: var(--navy);">CORNELL'S LANGUAGE RESOURCE CENTER PRESENTS</h3>
+                <div style="position: absolute; top: 50%; left: 0; transform: translateY(-50%);">
+                    <h1>Japanese</h1>
+                    <h1>Conversation</h1>
+                    <h1>Hour</h1>
+                    <h4>Every Friday 4-5pm @ Stimson G12</h4>
+                </div>
+
+                <img id="frog-speech-bubble" src="{{ url_for('static', filename='assets/images/bubble.svg') }}" />
+                    
+                <svg id="frog" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.9374 24.5537C20.1318 24.5537 7.31885 33.538 7.31885 44.6206C7.31885 55.7032 20.1318 64.6875 35.9374 64.6875C51.7431 64.6875 64.556 55.7032 64.556 44.6206C64.556 33.538 51.7431 24.5537 35.9374 24.5537Z" fill="#38B48B"/>
+                    <path d="M30.9465 36.8507C30.9465 24.7617 25.299 14.9616 18.3324 14.9616C11.3658 14.9616 5.71826 24.7617 5.71826 36.8507C5.71826 48.9397 11.3658 58.7397 18.3324 58.7397C25.299 58.7397 30.9465 48.9397 30.9465 36.8507Z" fill="#38B48B"/>
+                    <path d="M66.1545 36.8507C66.1545 24.7617 60.507 14.9616 53.5404 14.9616C46.5738 14.9616 40.9263 24.7617 40.9263 36.8507C40.9263 48.9397 46.5738 58.7397 53.5404 58.7397C60.507 58.7397 66.1545 48.9397 66.1545 36.8507Z" fill="#38B48B"/>
+                    <!-- MOUTH -->
+                
+                    <path id="mouth" d="M35.9377 42.9846C34.3085 42.9846 32.9878 45.4787 32.9878 48.5554C32.9878 51.632 34.3085 54.1261 35.9377 54.1261C37.5669 54.1261 38.8876 51.632 38.8876 48.5554C38.8876 45.4787 37.5669 42.9846 35.9377 42.9846Z" fill="#1F3134"/>
+                    
+                    <!-- NOSE -->
+                    <path d="M32.1064 37.9875C31.8808 38.1467 32.0925 38.8346 32.5791 39.5241C33.0657 40.2135 33.6431 40.6434 33.8686 40.4842C34.0941 40.325 33.8825 39.637 33.3959 38.9476C32.9092 38.2581 32.3319 37.8283 32.1064 37.9875Z" fill="#1F3134" fill-opacity="0.5"/>
+                    <path d="M39.7628 37.9857C39.5366 37.8275 38.9612 38.2599 38.4776 38.9515C37.9941 39.6431 37.7855 40.332 38.0117 40.4902C38.238 40.6484 38.8134 40.216 39.2969 39.5244C39.7805 38.8328 39.9891 38.1439 39.7628 37.9857Z" fill="#1F3134" fill-opacity="0.5"/>
+                    <mask id="mask0_54_1371" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="11" y="20" width="15" height="14">
+                    <path d="M15.9244 21.2536C16.6639 21.0362 17.5098 20.8935 18.3376 20.8935C19.1654 20.8935 19.962 21.0158 20.696 21.2332C20.7117 21.24 20.7273 21.24 20.7429 21.2468C23.4997 22.1165 25.5301 24.413 25.5692 27.0291V33.1937H11.0981V27.0336C11.1372 24.3994 13.1364 22.1029 15.9244 21.2536Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0_54_1371)">
+                    <path d="M15.9244 21.2536C16.6639 21.0362 17.5098 20.8935 18.3376 20.8935C19.1654 20.8935 19.962 21.0158 20.696 21.2332C20.7117 21.24 20.7273 21.24 20.7429 21.2468C23.4997 22.1165 25.5301 24.413 25.5692 27.0291V33.1937H11.0981V27.0336C11.1372 24.3994 13.1364 22.1029 15.9244 21.2536Z" fill="white"/>
+            
+                    <path d="M19.2354 21.9837C19.7363 21.7662 20.3093 21.6236 20.8701 21.6236C21.4309 21.6236 21.9706 21.7459 22.4679 21.9633C22.4785 21.9701 22.489 21.9701 22.4996 21.9769C24.3672 22.8465 25.7427 25.143 25.7692 27.7429V33.1937H15.9658V27.7469C15.9923 25.1295 17.3466 22.833 19.2354 21.9837Z" fill="#1F3134"/>
+                    </g>
+                    <mask id="mask1_54_1371" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="46" y="20" width="15" height="14">
+                    <path d="M51.1324 21.2536C51.8719 21.0362 52.7178 20.8935 53.5456 20.8935C54.3734 20.8935 55.17 21.0158 55.904 21.2332C55.9197 21.24 55.9353 21.24 55.9509 21.2468C58.7077 22.1165 60.7382 24.413 60.7772 27.0291V33.1937H46.3062V27.0336C46.3452 24.3994 48.3444 22.1029 51.1324 21.2536Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask1_54_1371)">
+                    <path d="M51.1324 21.2536C51.8719 21.0362 52.7178 20.8935 53.5456 20.8935C54.3734 20.8935 55.17 21.0158 55.904 21.2332C55.9197 21.24 55.9353 21.24 55.9509 21.2468C58.7077 22.1165 60.7382 24.413 60.7772 27.0291V33.1937H46.3062V27.0336C46.3452 24.3994 48.3444 22.1029 51.1324 21.2536Z" fill="white"/>
+                    
+                    <path d="M54.4429 21.9837C54.9439 21.7662 55.5169 21.6236 56.0777 21.6236C56.6385 21.6236 57.1781 21.7459 57.6754 21.9633C57.686 21.9701 57.6966 21.9701 57.7071 21.9769C59.5747 22.8465 60.9502 25.143 60.9767 27.7429V33.1937H51.1733V27.7469C51.1998 25.1295 52.5542 22.833 54.4429 21.9837Z" fill="#1F3134"/>
+                    
+                    </g>
+                    <path class="triangle" d="M59.5117 12.7642L63.8236 2.95679L69.5743 9.08713L59.5117 12.7642Z" fill="white"/>
+                    <path class="triangle" d="M61.8613 16.4857L68.3276 13.9557L67.6381 20.3383L61.8613 16.4857Z" fill="white"/>
+                </svg>
+                
+                <svg id="arrow" width="30" height="44" viewBox="0 0 30 44" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.895431 13 2L17 2ZM13.5858 43.4142C14.3668 44.1953 15.6332 44.1953 16.4142 43.4142L29.1421 30.6863C29.9232 29.9052 29.9232 28.6389 29.1421 27.8579C28.3611 27.0768 27.0948 27.0768 26.3137 27.8579L15 39.1716L3.68629 27.8579C2.90524 27.0768 1.63891 27.0768 0.857864 27.8579C0.0768158 28.6389 0.0768158 29.9052 0.857864 30.6863L13.5858 43.4142ZM13 2L13 42H17L17 2L13 2Z" fill="var(--navy)"/>
+                </svg>
+            </div>
+            <div class="content-block-menu-area"></div>
+        </div>
+    
+        <div class="content-block" style="background-color: var(--navy);">
+            <div class="content-block-content flex-col">
+                <h3 style="color: var(--yellow); padding-bottom: 40px;">MEET THE FACILITATORS</h3>
+
+                <div class="profile-row" style="gap: 20px; width: 100%; padding-bottom: 20px;">
+                    <div class="profile" style="border: 3px solid var(--green); background-size: 60%; background-position: center; background-repeat: no-repeat; background-image: url('{{ url_for('static', filename='assets/images/frog-mascot.svg') }}');">
+                        <div class="profile-name flex-col-center" >
+                            <p>ぴょ<br>ん太</p>
+                        </div>
+                    </div>
+                    <div class="profile" style="background-image: url('{{ url_for('static', filename='assets/images/sara.jpeg') }}');">
+                        <div class="profile-name flex-col-center" >
+                            <p>後藤<br>沙良</p>
+                        </div>
+                    </div>
+                    <div class="profile" style="background-position: center; background-image: url('{{ url_for('static', filename='assets/images/tami.jpg') }}');">
+                        <div class="profile-name flex-col-center" >
+                            <p>髙田<br>多実</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-row" style="gap: 40px; width: 100%;">
+                    <div class="profile" style="background-position: center; background-image: url('{{ url_for('static', filename='assets/images/bora.JPEG') }}');">
+                        <div class="profile-name flex-col-center" >
+                            <p>シン<br>ボラ</p>
+                        </div>
+                    </div>
+                    <div class="flex-col-center" style="flex: 2;">
+                        <div class="flex-col-center" style="width: 100%; height: 100%; max-width: 500px;">
+                            <h2 style="text-align: center; color: var(--yellow); padding-bottom: 20px;">What is Conversation Hour?</h2>
+                            <p style="text-align: justify; color: var(--yellow);">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block-menu-area"></div>
+        </div>
+
+        <div class="content-block" style="background-color: #75C9AD; padding-bottom: 0;">
+            <div class="content-block-content row-to-col" style="gap: 40px;">
+                <div id="newsletter-container" class="flex-col" style="height: 600px; width: 100%; max-width: 600px;">
+                    <select id="newsletter-date-selector" style="margin-bottom: 20px;" onchange="queryNewsletter()">
+                        {% for option in newsletters %}
+                        <option value="{{ option }}" {% if option == initial_selection %}selected="selected"{% endif %} >
+                            <h3>[#{{ loop.index }}] Week of {{ option }}</h3>
+                        </option>
+                        {% endfor %}
+                    </select>
+                    <div id="newsletter-viewer">
+                        {{ feature | safe }}
+                    </div>
+                </div>
+                <div id="newsletter-desc" class="flex-col-center">
+                    <div class="flex-col-center" style="max-width: 500px;">
+                        <h2 style="color: var(--navy); padding-bottom: 40px; text-align: center;">Join our Newsletter</h2>
+                        <p style="color: var(--navy); text-align: justify; padding-bottom: 40px;">Can't make it to Conversation Hour? You can still engage with our newsletter! We publish news snippets, slang analyses, kanji crosswords & more! Check out previous newsletters using the dropdown in the left panel.</p>
+                        <div class="border-button">
+                            <div class="border-button-border"></div>
+                            <div class="border-button-content">Sign Up</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block-menu-area"></div>
+        </div>
+
+        <div class="content-block" style="background-color: var(--yellow); padding-bottom: 80px;">
+            <div class="content-block-content">
+                
+                <h2>Contact Us</h2>
+                <form method="POST">
+                    <input name="email" placeholder="Enter your email" type="email" style="margin-top: 40px; margin-bottom: 10px;"></input>
+                    <textarea name="message" placeholder="Enter your message" type="text" style="height: 250px; resize: none; margin-bottom: 20px;" ></textarea>
+                    <input type="submit"></input>
+                </form>
+
+            </div>
+            <div class="content-block-menu-area"></div>
+        </div>
+
+        <footer class="flex-col">
+
+            <h2 style="color: white; font-size: 16px; opacity: 60%;">
+                Japanese Conversation Hour @<br>
+                Cornell University's Language Resource Center
+            </h2>
+
+            <p style="opacity: 40%; color: white;">
+                G12 Stimson Hall<br>
+                Ithaca, NY 14853<br>
+                United States
+            </p>
+            
+            <div style="opacity: 60%; background-color: var(--yellow); height: 2px; border-radius: 2px; width: 100%;"></div>
+
+            <p style="color: white; opacity: 60%;">Copyright &copy LRC Japanese Conversation Hour Team 2024</p>
+        </footer>
+    </div>
+
+    <nav style="color: var(--navy);">
+        <div id="nav-line"></div>
+        <div>
+            <div class="nav-item" onclick="scrollToBlock(1)"><h3>ABOUT</h3></div>
+            <div class="nav-item" onclick="scrollToBlock(2)"><h3>NEWSLETTER</h3></div>
+            <div class="nav-item" onclick="scrollToBlock(3)"><h3>CONTACT</h3></div>
+        </div>
+    </nav>
+
+    <script src="{{ url_for('static', filename='base.js') }}"></script>
+    
+</body>
+</html>
