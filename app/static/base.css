@@ -20,6 +20,10 @@ html, body {
     overflow: hidden scroll;
 }
 
+a {
+    color: var(--navy);
+}
+
 /* FONT STYLES ==================================================================== */
 
 @font-face { font-family: Zen; src: url("assets/fonts/ZenMaruGothic-Regular.ttf"); }

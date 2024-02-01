@@ -13,8 +13,8 @@ app = Flask(__name__)
 
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
-# app.config['MAIL_USERNAME'] = os.environ['EMAIL']
-# app.config['MAIL_PASSWORD'] = os.environ['EMAIL_PASSWORD']
+app.config['MAIL_USERNAME'] = os.environ['EMAIL']
+app.config['MAIL_PASSWORD'] = os.environ['EMAIL_PASSWORD']
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 
@@ -34,9 +34,14 @@ def get_home():
     if request.method == "POST":
         email = request.form["email"]
         message = request.form["message"]
-        print(message)
+        msg = Message(
+            '[和会話教室] New Message from Website Contact Form',
+            sender=('和会話教室', os.environ['EMAIL']),
+            recipients=[os.environ['EMAIL']]
+        )
+        msg.body = f"From {email}\nMessage: {message}"
+        mail.send(msg)
     return render_template("base.html", feature=feature, newsletters=all_newsletters, initial_selection="12-01-23")
-
 
 
 @app.route("/<date>")
