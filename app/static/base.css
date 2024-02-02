@@ -100,7 +100,7 @@ footer { background-color: var(--navy); padding: 40px; gap: 40px; }
 .profile:hover { transform: scale(1.01); }
 .profile:hover .profile-name { opacity: 100%; }
 .profile:hover::after { text-shadow: 0 0 8px var(--yellow); opacity: 100%; }
-.profile-row { display: flex; flex-direction: row; }
+.profile-row { display: flex; flex-direction: row; gap: 20px; width: 100%; padding-bottom: 20px; }
 .profile-name {
     height: 100%; width: 100%;
     background-color: rgba(31, 49, 52, 0.7);
