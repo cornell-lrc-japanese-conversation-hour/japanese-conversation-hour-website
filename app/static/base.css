@@ -28,7 +28,7 @@ a {
 
 @font-face { font-family: Zen; src: url("assets/fonts/ZenMaruGothic-Regular.ttf"); }
 @font-face { font-family: TimeMachine; src: url("assets/fonts/timemachine-wa.ttf"); }
-@font-face { font-family: SKMincho; src: url("assets/fonts/SoukouMincho.ttf"); }
+@font-face { font-family: SKMincho; src: url("assets/fonts/SoukouMincho.woff"); }
 
 h1 { font-family: SKMincho; font-size: 50px; color: var(--navy); padding-bottom: 10px; }
 h2 { font-family: SKMincho; font-size: 30px; }
