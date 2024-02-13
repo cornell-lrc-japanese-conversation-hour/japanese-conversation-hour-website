@@ -23,7 +23,7 @@ mail = Mail(app)
 
 @app.route("/", methods=["GET", "POST"])
 def get_home():
-    feature = parse.parse_newsletter("12-01-23")
+    feature = parse.parse_newsletter("02-13-24")
     all_newsletters = [
         "11-03-23",
         "11-10-23",
