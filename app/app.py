@@ -29,7 +29,9 @@ def get_home():
         "11-10-23",
         "11-17-23",
         "11-24-23",
-        "12-01-23"
+        "12-01-23",
+        "02-06-24",
+        "02-13-24"
     ]
     if request.method == "POST":
         email = request.form["email"]
@@ -41,7 +43,7 @@ def get_home():
         )
         msg.body = f"From {email}\nMessage: {message}"
         mail.send(msg)
-    return render_template("base.html", feature=feature, newsletters=all_newsletters, initial_selection="12-01-23")
+    return render_template("base.html", feature=feature, newsletters=all_newsletters, initial_selection="02-13-24")
 
 
 @app.route("/<date>")
