@@ -23,7 +23,7 @@ mail = Mail(app)
 
 @app.route("/", methods=["GET", "POST"])
 def get_home():
-    feature = parse.parse_newsletter("02-13-24")
+    feature = parse.parse_newsletter("03-12-24")
     all_newsletters = [
         "11-03-23",
         "11-10-23",
@@ -31,7 +31,11 @@ def get_home():
         "11-24-23",
         "12-01-23",
         "02-06-24",
-        "02-13-24"
+        "02-13-24",
+        "02-20-24",
+        "02-27-24",
+        "03-05-24",
+        "03-12-24"
     ]
     if request.method == "POST":
         email = request.form["email"]
