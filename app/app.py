@@ -47,7 +47,7 @@ def get_home():
         )
         msg.body = f"From {email}\nMessage: {message}"
         mail.send(msg)
-    return render_template("base.html", feature=feature, newsletters=all_newsletters, initial_selection="02-13-24")
+    return render_template("base.html", feature=feature, newsletters=all_newsletters, initial_selection=all_newsletters[-1])
 
 
 @app.route("/<date>")
